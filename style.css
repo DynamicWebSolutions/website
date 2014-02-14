@@ -1,0 +1,17 @@
+/*!
+Theme Name: DWS
+Theme URI: http://dynamicwebsolutions.com
+Author: L Sterling
+Author URI: http://www.lindsaywebstudio.com
+Description: A custom responsive theme for Dynamic Web Solutions
+Version: 1.0
+
+*/
+
+.zoe .slider-img {float:left; margin-right:20px; padding-bottom:70px; height:300px!important; width:300px!important;} 
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+.slider-text {width:84%}
+}
+
