@@ -24,18 +24,6 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- open graph -->  
-	<?php if (is_single()) { ?>  
-	<meta property="og:url" content="<?php the_permalink() ?>"/>  
-	<meta property="og:title" content="<?php single_post_title(''); ?>" />  
-	<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />  
-	<meta property="og:type" content="article" />  
-	<meta property="og:image" content="<?php if (function_exists('wp_get_attachment_thumb_url')) {echo wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); }?>" />    
-	<?php } else { ?>  
-	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />  
-	<meta property="og:description" content="<?php bloginfo('description'); ?>" />  
-	<meta property="og:type" content="website" />  
-	<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/logo.png" /> <?php } ?> 
     
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

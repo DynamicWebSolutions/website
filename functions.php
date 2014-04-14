@@ -75,6 +75,18 @@ endif;
  	}
   
 	add_action('wp_enqueue_scripts', 'bootstrapwp_js_loader');
+
+
+	function marchex_ppc_number_generator() {
+		wp_enqueue_script('marchex-number-generator', 'http://adtrack.voicestar.com/euinc/number-changer.js', null, '1.0', true);
+	}
+	add_action('wp_enqueue_scripts', 'marchex_ppc_number_generator', 20);
+
+	function marchex_ppc_number_generator_id() {
+		echo '<script type="text/javascript">vs_account_id = "CtjSZVG2AugLowC6"; </script>' ."\n";
+	}
+	add_action('wp_footer', 'marchex_ppc_number_generator_id');
+
 		
 /*
 | -------------------------------------------------------------------
