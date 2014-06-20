@@ -130,8 +130,6 @@ h4 { margin-bottom:20px;}
 	
 #content h2 {font-size:28px}
 
-article h2 a:link {text-decoration:none;}
-
 h2 > span { display: block; margin-top: -5px; }
 
 #sidebar .widget-title, #sidebar h2 { font-family:'Museo300Regular', 'Open Sans', Arial, sans-serif; font-size:24px; color:#ee6f08!important; font-weight:normal!important; text-transform:capitalize!important; line-height:28px;}
@@ -211,6 +209,20 @@ a:hover {color:#ee6f08}
 	margin-bottom:20px;
 }
 
+/* ===================================== */
+/* CAlls to Action*/
+/* ===================================== */
+
+.case-study-cta {
+	position:relative;
+}
+
+.case-study-cta a {
+	position: absolute;
+	bottom:10%;
+	left:5%;
+}
+
 
 /* ===================================== */
 /* Buttons*/
@@ -287,6 +299,15 @@ a.btn:link, a.btn:visited, a.btn:hover {color:#fff!important; text-decoration:no
 	letter-spacing:1px;
 	text-shadow:none;
 }
+
+.btn-cta {
+	font-size: 2em;
+	background: url(../img/btn-arrow.png) no-repeat right center rgb(238, 111, 8);	
+}
+
+.btn-cta:hover {
+	font-size: 2.1em;
+}	
 
 
 /* ===================================== */

@@ -111,40 +111,16 @@ get_header(); ?>
       
       </div>
     </div>
-    
-    <?php endwhile; endif;?>
-    
-<!--============================== blog =================================-->
-
-
-		<div class="row">
-			<div class="span12">
-				<div class="divider"><span>OUR LATEST THOUGHTS</span></div>
-
-					<?php $blog_posts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 2));
-					while ($blog_posts->have_posts()) : $blog_posts->the_post();?>
-
-						<article>
-							<h2><a href="<?php the_permalink()?>" title="<?php the_title()?>"><?php the_title()?></a></h2>
-							<p><?php echo get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true)?></p>
-						</article>
-
-					<?php endwhile;?>
-
-			</div> 
-		</div>
-	
   
-
-
-<!--============================== companies =================================-->
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   
   <div class="row">
     <div class="span12">
       <div class="divider"><span>COMPANIES WE'VE WORKED WITH</span></div>
       
+      			
+           
+               
+
                 
                 <div class="clients-holder">
                
@@ -175,9 +151,6 @@ get_header(); ?>
    
        
 </div> <!-- /container -->
-
-
-
         
 <!--============================== orange section =================================-->
 

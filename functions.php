@@ -65,6 +65,8 @@ endif;
 ################################################################################
 // Loading all JS Script Files.  Remove any files you are not using!
 ################################################################################
+	add_action('wp_enqueue_scripts', 'bootstrapwp_js_loader');
+
 	function bootstrapwp_js_loader() {
 		wp_enqueue_script('bootstrapjs', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'),'0.90', true );
 		if( is_front_page() ) {
@@ -72,20 +74,37 @@ endif;
 	   		wp_enqueue_script('jPages', get_template_directory_uri().'/js/jPages.js', array('jquery'), '1.0', true);
 	 	}
 		wp_enqueue_script('custom', get_template_directory_uri().'/js/custom.js', array('jquery', 'flexslider'),'1.0', true);
+
+		wp_enqueue_script('google-remarketing', 'http://www.googleadservices.com/pagead/conversion.js', null, '1.0', true);
  	}
   
-	add_action('wp_enqueue_scripts', 'bootstrapwp_js_loader');
 
-
-	function marchex_ppc_number_generator() {
-		wp_enqueue_script('marchex-number-generator', 'http://adtrack.voicestar.com/euinc/number-changer.js', null, '1.0', true);
+	add_action('wp_head', 'google_remarketing_variables');
+	function google_remarketing_variables() {
+		echo '	
+			<!-- Google Remarketing Variables -->
+			<script type="text/javascript">
+			/* <![CDATA[ */
+			var google_conversion_id = 983807342;
+			var google_custom_params = window.google_tag_params;
+			var google_remarketing_only = true;
+			/* ]]> */
+			</script>';		
 	}
-	add_action('wp_enqueue_scripts', 'marchex_ppc_number_generator', 20);
 
-	function marchex_ppc_number_generator_id() {
-		echo '<script type="text/javascript">vs_account_id = "CtjSZVG2AugLowC6"; </script>' ."\n";
+	add_action('wp_footer', 'google_remarketing_noscript');
+	function google_remarketing_noscript() {
+		echo '
+			<!-- Google Remarketing -->
+			<noscript>
+			<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/983807342/?value=0&amp;guid=ON&amp;script=0"/>
+			</div>
+			</noscript>
+		';
 	}
-	add_action('wp_footer', 'marchex_ppc_number_generator_id');
+
+
 
 		
 /*
