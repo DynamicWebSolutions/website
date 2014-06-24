@@ -210,7 +210,7 @@ a:hover {color:#ee6f08}
 }
 
 /* ===================================== */
-/* CAlls to Action*/
+/* Calls to Action*/
 /* ===================================== */
 
 .case-study-cta {
@@ -221,6 +221,12 @@ a:hover {color:#ee6f08}
 	position: absolute;
 	bottom:10%;
 	left:5%;
+}
+
+.case-study-form {
+	float:right; 
+	width:35%; 
+	padding:1em 3em
 }
 
 
@@ -915,6 +921,32 @@ section.slider .container { margin:0 40px;}
 }
 
 @media (max-width: 481px) {
+
+/* ===================================== */
+/* Calls to Action*/
+/* ===================================== */
+
+
+.case-study-cta a {
+	position: relative;
+	bottom:0;
+	left:0;
+}
+
+.case-study-form {
+	float:none; 
+	width:100%; 
+	padding:1em 0;
+}
+
+.btn-cta {
+	font-size: 1em;
+	background: url(../img/btn-arrow.png) no-repeat right center rgb(238, 111, 8);	
+}
+
+.btn-cta:hover {
+	font-size: 1em;
+}	
 
 .slider-text p { font-size:13px; line-height:13px;}
 
