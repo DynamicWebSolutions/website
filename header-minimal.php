@@ -1,14 +1,3 @@
-<?php
-/**
- *
- * Default Page Header
- *
- * @package WP-Bootstrap
- * @subpackage Default_Theme
- * @since WP-Bootstrap 0.1
- *
- * 
- */ ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
@@ -27,7 +16,7 @@
     
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
   	<!-- fav and touch icons -->
     <link rel="shortcut icon" href="<?php bloginfo( 'template_url' );?>/ico/favicon.ico">

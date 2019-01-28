@@ -31,7 +31,7 @@
 	elseif (is_tree('256')) { 
 		dynamic_sidebar("sidebar-consulting"); }  
 		
-	elseif (is_tree('91')) { 
+	elseif (is_tree('91') || is_tree('105') || is_tree('3979')) { 
 		dynamic_sidebar("sidebar-contact"); } 
 		
 	else { dynamic_sidebar("sidebar-default"); }

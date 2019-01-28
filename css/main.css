@@ -223,11 +223,7 @@ a:hover {color:#ee6f08}
 	left:5%;
 }
 
-.case-study-form {
-	float:right; 
-	width:35%; 
-	padding:1em 3em
-}
+
 
 
 /* ===================================== */
@@ -435,6 +431,29 @@ input:focus, textarea:focus {
 	font-style:italic;
 	padding-bottom:15px;
 	font-size:12px;
+}
+
+.case-study-form {
+	float:right; 
+	width:45%; 
+	padding:1em 3em
+}
+
+.case-study-form-full {
+	width: 50%;
+	padding: 5%;
+	background: rgb(238, 111, 8);	
+	box-sizing: border-box;
+}
+
+.case-study-form-full h3 {
+	font-size:5em;
+	color:rgb(255,255,255);
+}
+
+.case-study-form-full p {
+	font-size:2em;
+	color:rgb(255,255,255);
 }
 
 
@@ -683,6 +702,89 @@ padding-left:20px;
 
 
 /* ===================================== */
+/* About page */
+/* ===================================== */
+
+.dws-employees div,
+.dws-certificates div {
+	margin-bottom:30px;
+}
+
+.dws-certificates img {
+	display:block;
+	margin:0 auto;
+}
+
+
+/* ===================================== */
+/* Careers pages */
+/* ===================================== */
+
+.single-job_listing hr {
+	clear:both;
+}
+
+#content div.job_listings ul li {
+	background:none;
+}
+
+body.page .job_filters,
+body.page .job_listing date {
+	display:none;
+}
+
+.job_filters .search_jobs div.search_keywords {
+	width:100%;
+}
+
+.job_filters .search_jobs div.search_location {
+	display:none;
+}
+
+#content .single_job_listing .meta li {
+	background: none;
+}
+
+#content .single_job_listing .meta li.job-type {
+	background: rgb(240, 141, 60);
+}
+
+#content .single_job_listing .meta li.date-posted {
+	display: none;
+}
+
+
+
+/* ===================================== */
+/* Automotive pages */
+/* ===================================== */
+
+.auto-clients div {	 	 
+	height:140px;	 	 
+	margin:2em 0;	 	 
+}	 	 
+.auto-clients img {	 	 
+	vertical-align: middle;	 	 
+	max-height:140px;	 	 
+	max-width:140px;	 	 
+}	 	 
+.auto-clients span:before {	 	 
+	content:"";	 	 
+	display: inline-block;	 	 
+	height: 100%;	 	 
+	vertical-align: middle;	 	 
+}	 	 
+.marketing-services {	 	 
+	text-align:center;	 	 
+	margin: 2em 0;	 	 
+}	 
+.marketing-services img {
+	display:block;
+	max-width:150px;
+	margin:0 auto;
+}		 
+
+/* ===================================== */
 /* Blog*/
 /* ===================================== */
 
@@ -760,6 +862,16 @@ ol.commentlist img.avatar { margin-top:0;}
 }
 
 @media (max-width: 979px) {
+
+
+.btn-cta {
+	font-size: 1.3em;
+	background: url(../img/btn-arrow.png) no-repeat right center rgb(238, 111, 8);	
+}
+
+.btn-cta:hover {
+	font-size: 1.4em;
+}		
 
 .indent-right {
  padding-right: 0;
@@ -897,6 +1009,8 @@ section.slider h1 {
 #content ul.badges li {min-height:80px}
 #content ul.badges li img {max-width:100px;height:auto;}
 
+
+
 }
 
 @media (min-width: 626px) and (max-width: 767px) {	
@@ -904,23 +1018,6 @@ section.slider h1 {
 
 
 @media (max-width: 625px) {
-	
-section.slider  .slider-img  { display:none!important;}
-	
-section.slider .container { margin:0 40px;}
-
-.logoplus img { max-width:150px;}
-
-
-
-}
-
-@media (max-width: 482px) and (max-width: 625px) {
-	
-
-}
-
-@media (max-width: 481px) {
 
 /* ===================================== */
 /* Calls to Action*/
@@ -946,7 +1043,30 @@ section.slider .container { margin:0 40px;}
 
 .btn-cta:hover {
 	font-size: 1em;
-}	
+}		
+
+.case-study-form-full {
+	width: 100%;
+}
+	
+section.slider  .slider-img  { display:none!important;}
+	
+section.slider .container { margin:0 40px;}
+
+.logoplus img { max-width:150px;}
+
+
+
+}
+
+@media (max-width: 482px) and (max-width: 625px) {
+	
+
+}
+
+@media (max-width: 481px) {
+
+
 
 .slider-text p { font-size:13px; line-height:13px;}
 

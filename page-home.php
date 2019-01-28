@@ -171,7 +171,7 @@ get_header(); ?>
          		<h2>GET EMAIL UPDATES</h2>
 				<p>Keep in touch with us & hear about the most recent news/tips.</p>
             	
-                <form action="http://dynamicwebsolutions.us2.list-manage1.com/subscribe/post?u=663c3bb7267265a1cd33fde57&amp;id=505cacaa44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <form action="//dynamicwebsolutions.us2.list-manage.com/subscribe/post?u=663c3bb7267265a1cd33fde57&amp;id=505cacaa44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 					<fieldset>
                     	<span class="email">
                         <input type="text" value="Enter your email address" name="EMAIL" class="email-input" id="mce-EMAIL" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" ><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
